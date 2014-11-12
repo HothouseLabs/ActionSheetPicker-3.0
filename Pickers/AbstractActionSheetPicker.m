@@ -378,8 +378,9 @@ CG_INLINE BOOL isIPhone4()
 
 - (UIToolbar *)createPickerToolbarWithTitle:(NSString *)title
 {
-    CGRect frame = CGRectMake(0, 0, self.viewSize.width, 44);
+    CGRect frame = CGRectMake(-16, 0, self.viewSize.width+32, 35);
     UIToolbar *pickerToolbar = [[UIToolbar alloc] initWithFrame:frame];
+    
     pickerToolbar.barStyle = (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) ? UIBarStyleDefault : UIBarStyleBlackTranslucent;
 
     NSMutableArray *barItems = [[NSMutableArray alloc] init];
